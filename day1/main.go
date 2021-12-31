@@ -6,5 +6,5 @@ func init() {
 }
 
 func main() {
-	println("Main","test")
+	println("Main", "test")
 }
