@@ -13,8 +13,14 @@ func standarIf() {
 	}
 }
 
-func a() {
-
+func symbolIf() {
+	x, y := 10, 10
+	if x == 10 && y == 10 {
+		print("&&")
+	}
+	if x == 10 || y == 10 {
+		print("||")
+	}
 }
 
 func main() {
