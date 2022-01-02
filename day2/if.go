@@ -24,4 +24,7 @@ func symbolIf() {
 }
 
 func main() {
+	if num := 10; num%2 == 0 {
+		fmt.Println("even")
+	}
 }
