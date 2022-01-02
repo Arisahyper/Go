@@ -17,9 +17,16 @@ func board() {
 		{4, 5, 6},
 	}
 	fmt.Println(borad[1][1])
+	// [[1 2 3] [4 5 6]]
+}
+
+func capMake() {
+	n := []int{1, 2, 3, 4, 5}
+	fmt.Printf("len: %d\ncap: %d\n", len(n), cap(n))
 }
 
 func main() {
 	// standard()
-	board()
+	// board()
+	capMake()
 }
