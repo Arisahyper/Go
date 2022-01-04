@@ -9,9 +9,13 @@ func deferWrapper() {
 }
 
 func main() {
-	deferWrapper()
-
 	defer fmt.Println("4")
+
+	deferWrapper()
 
 	fmt.Println("3")
 }
+
+/*
+そのブロック内（今回は関数）のdeferは、ブロックの最後に実行される。
+*/
