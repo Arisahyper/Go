@@ -7,4 +7,14 @@ func main() {
 	for k, v := range m {
 		fmt.Printf("%s: %d\n", k, v)
 	}
+
+	// キーのみ取得
+	for k := range m {
+		fmt.Println(k)
+	}
+
+	// 値のみ取得
+	for _, v := range m {
+		fmt.Println(v)
+	}
 }

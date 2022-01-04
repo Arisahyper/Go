@@ -10,7 +10,7 @@ type Human struct {
 
 func (human Human) getName() string {
 	return human.name
-} 
+}
 
 func main() {
 	var tom Human
