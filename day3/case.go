@@ -2,9 +2,12 @@ package main
 
 import "fmt"
 
+func getOsName() string {
+	return "mac"
+}
+
 func main() {
-	os := "mac"
-	switch os {
+	switch getOsName() {
 	case "mac":
 		fmt.Println("mac")
 	case "win":
