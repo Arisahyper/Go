@@ -20,4 +20,8 @@ func main() {
 	}
 	fmt.Println(count)
 	fmt.Println(string(data))
+
+	if err = os.Chdir("/tmp"); err != nil {
+		log.Fatal(err)
+	}
 }
