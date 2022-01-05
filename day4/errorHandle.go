@@ -14,7 +14,7 @@ func main() {
 	defer file.Close()
 
 	data := make([]byte, 100)
-	count, err := file.Read(data)
+	count, err := file.Read(data) // errは上書きされてるよ
 	if err != nil {
 		log.Fatal(err)
 	}
