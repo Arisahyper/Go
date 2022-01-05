@@ -11,6 +11,6 @@ func main() {
 
 	_, err := os.Open("/tmp/test.txt")
 	if err != nil {
-		log.Fatalln("エラーです >> ",err)
+		log.Fatalln("エラーです >> ", err)
 	}
 }
