@@ -33,6 +33,6 @@ func main() {
 	fmt.Println(v6)        // &{0 0  }
 	fmt.Printf("%T\n", v6) // *main.Vertex
 
-	v7 := &Vertex{}
+	v7 := &Vertex{}        // newと同じ
 	fmt.Printf("%T\n", v7) // *main.Vertex
 }
