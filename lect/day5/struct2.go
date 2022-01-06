@@ -7,10 +7,12 @@ type Vertex struct {
 	Y int
 }
 
+// 値渡し
 func changeVertex(v Vertex) {
 	v.X = 1000
 }
 
+// 参照渡し
 func changeVertex2(v *Vertex) {
 	v.X = 1000
 	// (*v).X = 1000 / こういう書き方もある
