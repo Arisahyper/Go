@@ -13,6 +13,7 @@ func changeVertex(v Vertex) {
 
 func changeVertex2(v *Vertex) {
 	v.X = 1000
+	// (*v).X = 1000 / こういう書き方もある
 }
 
 func main() {
