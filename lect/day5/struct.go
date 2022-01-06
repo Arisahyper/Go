@@ -23,4 +23,7 @@ func main() {
 
 	v4 := Vertex{}
 	fmt.Println(v4) // {0 0  }
+
+	var v5 Vertex
+	fmt.Println(v5) // {0 0  }
 }
