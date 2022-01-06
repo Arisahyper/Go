@@ -22,8 +22,17 @@ func main() {
 	fmt.Println(v3)            // {1 2 test}
 
 	v4 := Vertex{}
-	fmt.Println(v4) // {0 0  }
+	fmt.Println(v4)        // {0 0  }
+	fmt.Printf("%T\n", v4) // main.Vertex
 
 	var v5 Vertex
-	fmt.Println(v5) // {0 0  }
+	fmt.Println(v5)        // {0 0  } / nilではない
+	fmt.Printf("%T\n", v5) // main.Vertex
+
+	v6 := new(Vertex)      //
+	fmt.Println(v6)        // &{0 0  }
+	fmt.Printf("%T\n", v6) // *main.Vertex
+
+	v7 := &Vertex{}
+	fmt.Printf("%T\n", v7) // *main.Vertex
 }
