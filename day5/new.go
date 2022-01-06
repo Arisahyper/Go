@@ -10,7 +10,7 @@ func main() {
 	fmt.Println(*n)       // 1
 
 	var o *int
-	fmt.Println(o) 		// nil
+	fmt.Println(o) // nil
 	// *o++           // panic: runtime error: invalid memory address or nil pointer dereference
 	// fmt.Println(o) // nil
 }
