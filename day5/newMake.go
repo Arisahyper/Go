@@ -11,4 +11,10 @@ func main() {
 
 	var p *int = new(int)
 	fmt.Printf("%T\n", p) // *int	/ ポインタ型
+
+	ch := make(chan int)
+	fmt.Printf("%T\n", ch) // chan int / 空のチャネル
+
+	var st = new(struct{})
+	fmt.Printf("%T\n", st) // struct {} / 空のstruct
 }
