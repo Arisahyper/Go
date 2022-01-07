@@ -22,7 +22,7 @@ func main() {
 		fmt.Println(ans)
 		os.Exit(0)
 	}
-	ans = (y-x)/10
-	
+	ans = (y - x) / 10
+
 	fmt.Println(ans)
 }
