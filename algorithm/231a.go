@@ -7,3 +7,5 @@ func main() {
 	fmt.Scan(&n)
 	fmt.Println(n / 100)
 }
+
+// 100で割って小数点以下も表示
