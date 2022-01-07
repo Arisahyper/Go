@@ -7,7 +7,7 @@ type Vertex struct {
 	Y int
 }
 
-// メソッド / Vertexに紐づく
+// メソッド / Vertexに紐づく関数
 func (v Vertex) Area() int {
 	return v.X * v.Y
 }
