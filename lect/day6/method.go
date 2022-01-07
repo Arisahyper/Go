@@ -17,9 +17,21 @@ func Area(v Vertex) int {
 	return v.X * v.Y
 }
 
+// 倍する
+func (v *Vertex) Scale(i int) {
+	v.X *= i
+	v.Y *= i
+}
+
 func main() {
 	v := Vertex{3, 4}
 
 	fmt.Println(Area(v))
+	fmt.Println(v.Area())
+	
+	
+	fmt.Println(v)
+	v.Scale(10)
+	fmt.Println(v)
 	fmt.Println(v.Area())
 }
