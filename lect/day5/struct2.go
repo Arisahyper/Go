@@ -24,5 +24,5 @@ func main() {
 	fmt.Println(v) // {1 2}	/ 値渡し
 
 	changeVertex2(&v)
-	fmt.Println(v) // {1000 2}	/ 参照渡し
+	fmt.Println(v) // {1000 2} / 参照渡し
 }
