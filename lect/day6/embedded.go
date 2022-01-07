@@ -29,8 +29,10 @@ func New(x, y, z int) *Vertex3D {
 
 func main() {
 	v := New(3, 4, 5)
+
 	fmt.Println(v)
 	fmt.Println(v.Area3D())
+	
 	v.Scale3D(10)
 	fmt.Println(v)
 	fmt.Println(v.Area3D())
