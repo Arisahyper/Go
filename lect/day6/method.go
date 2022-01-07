@@ -28,8 +28,7 @@ func main() {
 
 	fmt.Println(Area(v))
 	fmt.Println(v.Area())
-	
-	
+
 	fmt.Println(v)
 	v.Scale(10)
 	fmt.Println(v)
