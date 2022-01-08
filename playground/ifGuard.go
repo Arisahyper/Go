@@ -20,3 +20,5 @@ func main() {
 	result := numberDiscrimination(i)
 	fmt.Println(result)
 }
+
+// ガード節？

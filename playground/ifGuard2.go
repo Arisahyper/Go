@@ -10,3 +10,5 @@ func main() {
 		fmt.Println(i)
 	}
 }
+
+// ループ内でのガード節？
