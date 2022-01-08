@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Human interface {
-	Say() 	 string
+	Say() string
 }
 
 type Person struct {

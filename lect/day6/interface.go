@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Human interface {
-	Say() 	 string
+	Say() string
 	Rename() string
 }
 
@@ -32,7 +32,7 @@ func DriveCar(h Human) {
 func main() {
 	var mike Human = &Person{"Mike"}
 	var john Human = &Person{"John"}
-	
+
 	// mike.Say()
 	// mike.Rename()
 
