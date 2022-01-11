@@ -18,10 +18,20 @@ func typeBranch(i interface{}) {
 
 func do(i interface{}){
 	// ii := i * 2 // error
-	ii := i.(int) * 2 // error
+	ii := i.(int) * 2 // type assertion
 	fmt.Println(ii)
 }
 
 func main() {
 	do(1)
+	typeBranch(1)
+	typeBranch("hoge")
+	typeBranch(true)
 }
+
+// type assertion
+// interface{}に対して型を指定すること
+
+// type conversion
+// cast
+// 一般的な標準の型変換
