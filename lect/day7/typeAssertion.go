@@ -16,7 +16,7 @@ func typeBranch(i interface{}) {
 	}
 }
 
-func do(i interface{}){
+func do(i interface{}) {
 	// ii := i * 2 // error
 	ii := i.(int) * 2 // type assertion
 	fmt.Println(ii)
