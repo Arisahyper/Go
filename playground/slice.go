@@ -17,6 +17,12 @@ func main() {
 	dist := make([]string, len(list))
 	copy(dist, list)
 	fmt.Println(dist)
+
+	// slice append
+	list1 := []string{"hoge", "fuga"}
+	list2 := []string{"piyo", "uga"}
+	sumList := append(list1, list2...)
+	fmt.Println(sumList)
 }
 
 
