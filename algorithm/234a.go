@@ -13,7 +13,7 @@ func main() {
 	var n float64
 	fmt.Scan(&n)
 
-	fmt.Println(int(f(f(f(n)+n)+f(f(n)))))
+	fmt.Println(int(f(f(f(n)+n) + f(f(n)))))
 }
 
 // 関数を作成 -> 繰り返し処理
