@@ -9,7 +9,7 @@ func main() {
 
 	s := []string{"hoge", "fuga", "piyo"}
 	fmt.Println(s)
-	fmt.Println(len(s))	// length
+	fmt.Println(len(s)) // length
 	fmt.Println(cap(s)) // capacity
 
 	// slice copy
@@ -29,7 +29,6 @@ func main() {
 	list3 = append(list3[:1], list3[2:]...) // 1個目の要素と3個目以降の要素を足すことで削除をする
 	fmt.Println(list3)
 }
-
 
 // スライス slice
 // 操作 コピー
