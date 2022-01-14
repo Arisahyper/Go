@@ -31,8 +31,7 @@ func main() {
 	// normal print
 	fmt.Println(people)
 
-
-	// 
+	//
 	sort.Sort(ByAge(people))
 	fmt.Println(people)
 
