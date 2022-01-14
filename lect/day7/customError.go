@@ -7,6 +7,7 @@ type UserNotFoundError struct {
 	UserName string
 }
 
+// ポインタにしないと同様のエラー2個が等しいと判断されてしまう
 func (e *UserNotFoundError) Error() string {
 	return e.UserName + " is not found"
 }
