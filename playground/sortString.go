@@ -15,4 +15,13 @@ func main() {
 
 	sort.Sort(sort.Reverse(sort.StringSlice(fruits))) // reverse string
 	fmt.Println(fruits)                               // reverse
+
+	fruits = reverse(fruits) // reverse string
+	fmt.Println(fruits)      // reverse
+}
+
+// 非破壊的なソート
+func reverse(s []string) []string {
+	sort.Sort(sort.Reverse(sort.StringSlice(s))) // reverse string
+	return s
 }
