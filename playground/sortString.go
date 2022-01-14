@@ -12,4 +12,7 @@ func main() {
 
 	sort.Strings(fruits) // sort string
 	fmt.Println(fruits)  // sorted
+
+	sort.Sort(sort.Reverse(sort.StringSlice(fruits))) // reverse string
+	fmt.Println(fruits)                               // reverse
 }
