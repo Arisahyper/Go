@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 // 自作エラー
-type UserNotFound struct {
+type UserNotFoundError struct {
 	UserName string
 }
 
-func (e *UserNotFound) Error() string {
+func (e *UserNotFoundError) Error() string {
 	return e.UserName + " is not found"
 }
 
@@ -15,11 +15,11 @@ func myFunc(name string) error {
 	if name == "hoge" {
 		return nil // okならerrorはないのでnilを返す
 	}
-	return &UserNotFound{name} // errorならUserNotFoundを返す
+	return &UserNotFoundError{UserName: name} // errorならUserNotFoundを返す
 }
 
 func main() {
-	name := "hoge"
+	name := "hogea"
 	err := myFunc(name)
 	if err != nil {
 		fmt.Println(err)
