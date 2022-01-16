@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func goroutine(s []int, c chan int) {
-	sum := 0
-	for _, v := range s {
-		sum += v
+	sum := 0              // 合計値の器
+	for _, v := range s { // スライスの要素を取り出す
+		sum += v // 合計値を計算
 	}
-	c <- sum
+	c <- sum // チャネルに合計値を送る
 }
 
 func main() {
