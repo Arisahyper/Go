@@ -9,7 +9,6 @@ func main() {
 
 	close(ch) // チャネルを閉じる / rangeで取り出す際はこれが必要
 
-
 	for c := range ch {
 		fmt.Println(c)
 	}
