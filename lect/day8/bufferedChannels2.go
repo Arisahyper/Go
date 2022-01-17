@@ -13,8 +13,4 @@ func main() {
 	fmt.Println(x)
 	ch <- 300            // チャネルにデータを送る
 	fmt.Println(len(ch)) // チャネルの要素数を表示 / 2
-
-	for c := range ch {
-		fmt.Println(c)
-	}
 }
