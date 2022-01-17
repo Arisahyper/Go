@@ -5,12 +5,12 @@ import "fmt"
 func main() {
 	ch := make(chan int, 2) // チャネルを用意
 	ch <- 100               // チャネルにデータを送る
-	fmt.Println(len(ch))    // チャネルの要素数を表示 / 1
-	ch <- 200               // チャネルにデータを送る / もう入らない
-	fmt.Println(len(ch))    // チャネルの要素数を表示 / 2
+	ch <- 200               // チャネルにデータを送る
 
-	x := <-ch // チャネルからxへデータを受け取る / 一回取り出すことによって要素数が減る
-	fmt.Println(x)
-	ch <- 300            // チャネルにデータを送る
-	fmt.Println(len(ch)) // チャネルの要素数を表示 / 2
+	close(ch) // チャネルを閉じる / rangeで取り出す際はこれが必要
+
+
+	for c := range ch {
+		fmt.Println(c)
+	}
 }
