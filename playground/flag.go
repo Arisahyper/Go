@@ -17,15 +17,17 @@ func standard() {
 }
 
 func typeParse() {
-	var (
+	var ( // 型指定 / デフォルトで入る値
 		i = flag.Int("int", 0, "int flag")
 		s = flag.String("str", "default", "string flag")
 		b = flag.Bool("bool", false, "bool flag")
 	)
 	flag.Parse()
 	fmt.Println(*i, *s, *b)
+
+	// go run flag.go -int 2 -str hello -bool true
 }
 
 func main() {
-
+	typeParse()
 }
