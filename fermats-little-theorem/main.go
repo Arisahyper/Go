@@ -7,7 +7,7 @@ import (
 
 func main() {
 	for i := 0; i < 100; i++ {
-		fmt.Println("a =",i ,f(float64(i), 7))
+		fmt.Println("a =", i, f(float64(i), 7))
 	}
 }
 
