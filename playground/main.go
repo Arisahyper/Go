@@ -1,5 +1,7 @@
 package main
 
-func main() {
+import "playground/regex"
 
+func main() {
+	regex.Match()
 }
