@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	r := mux.NewRouter()
+	r := mux.NewRouter()	// *Router型の変数r
 
 	r.HandleFunc("/", homeHandler)
 	r.HandleFunc("/login", loginHandler)
