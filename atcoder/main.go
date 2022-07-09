@@ -3,9 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	var n, x int = 1, 3
-	fmt.Scan(&n, &x)
+	var n int
+	fmt.Scan(&n)
 
-	ch := ((x-1)/n + 'A')
-	fmt.Println(string(ch))
+	fmt.Println(1 << n)
 }
