@@ -3,8 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	var n rune
-	fmt.Scan(&n)
+	var s string
+	fmt.Scan(&s)
 
-	fmt.Println(string(n))
+	for {
+		if len(s) >= 6 {
+			break
+		}
+		s += s
+	}
+
+	fmt.Println(s[0:6])
 }
