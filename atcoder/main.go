@@ -1,30 +1,11 @@
 package main
 
-import (
-	"fmt"
-	"strconv"
-)
-
-func mod(k, n int) int {
-	if k >= n {
-		k -= n
-		k = mod(k, n)
-	} 
-	return k
-}
+import "fmt"
 
 func main() {
-	var k int
-	var n string
-	fmt.Scanf("%d", &k)
+	var n, x int = 1, 3
+	fmt.Scan(&n, &x)
 
-	if mod(k, 60) >= 10 {
-		n = strconv.Itoa(mod(k, 60))
-	} else {
-		n = "0" + strconv.Itoa(mod(k, 60))
-	}
-
-	fmt.Printf("%s:%s", strconv.Itoa(21+(k/60)), n)
+	ch := ((x-1)/n + 'A')
+	fmt.Println(string(ch))
 }
-
-// https://atcoder.jp/contests/abc258/tasks/abc258_a
