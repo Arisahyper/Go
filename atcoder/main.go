@@ -1,13 +1,10 @@
 package main
 
-import (
-	"fmt"
-	"strconv"
-)
+import "fmt"
 
 func main() {
-	var n int
+	var n rune
 	fmt.Scan(&n)
 
-	fmt.Println(strconv.Itoa(n)[1:])
+	fmt.Println(string(n))
 }
